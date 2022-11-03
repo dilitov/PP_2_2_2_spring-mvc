@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Главная</title>
 </head>
 <body>
 <div>
@@ -11,5 +11,13 @@
         <h1 th:text="${msg}"></h1>
     </th:block>
 </div>
+<br>
+<form action="cars/showCars">
+    <input type="submit" value="Показать все автомобили"/>
+</form>
+<br>
+<form action="cars/enterCar">
+    <input type="submit" value="Добавить автомобиль"/>
+</form>
 </body>
 </html>
