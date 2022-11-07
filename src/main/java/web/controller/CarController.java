@@ -15,7 +15,7 @@ import web.service.CarService;
         private CarService service;
 
 
-        @GetMapping("showCars")
+        @GetMapping("/showCars")
         public String showAllCars(@RequestParam(defaultValue = "5") int count, Model model) {
             model.addAttribute("count", count);
             model.addAttribute("allCars", service.getCarsListByCount(count));
